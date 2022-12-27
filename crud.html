@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD OPERATION</title>
+    <link rel="stylesheet" href="./crud.css">
+    <script type="text/javascript" src="./crud.js"></script>
+</head>
+<body>
+    <h1>: EMPLOYEE DETAILS :</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label >EID :</label> <br>
+                        <input type="" placeholder="Employee ID" id="eid" required>
+                    </div>
+                    <div>
+                        <label for="ename">ENAME :</label>
+                        <input type="text" placeholder="Employee Name" id="ename" required>
+                    </div>
+                    <div>
+                        <label for="email">E-MAIL :</label>
+                        <input type="email" placeholder="Employee Email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="salary">SALARY :</label>
+                        <input type="number" placeholder="Employee Salary" id="salary" required>
+                    </div>
+                    <div>
+                        <label for="bonus">BONUS :</label>
+                        <input type="number" placeholder="Employee Bonus" id="bonus" required>
+                    </div>
+
+                    <div>
+                        <button>Submit</button>
+                        <button onclick="resetData()" >Reset</button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <td>
+        <table class="list" id="dataList">
+            <thead>
+                <tr>
+                    <th>EID</th>
+                    <th>ENAME</th>
+                    <th>EMAIL</th>
+                    <th>SALARY</th>
+                    <th>BONUS</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </td>
+</body>
+</html>
